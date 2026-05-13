@@ -1,43 +1,43 @@
 const quickTasks = [
   {
     id: 1,
-    title: "Carry a bag to the door",
-    details: "5 min · neighbor building, ground floor",
+    title: "Донести сумку до двери",
+    details: "5 мин · соседний корпус, 1 этаж",
     points: 12,
     visionAssist: false
   },
   {
     id: 2,
-    title: "Read expiry date on a package",
-    details: "Here & now · video or photo assist",
+    title: "Прочитать срок годности",
+    details: "Здесь и сейчас · фото или видео",
     points: 18,
     visionAssist: true
   },
   {
     id: 3,
-    title: "Point the way to the clinic",
-    details: "10 min · spoken directions only",
+    title: "Показать дорогу к клинике",
+    details: "10 мин · только устные указания",
     points: 14,
     visionAssist: false
   },
   {
     id: 4,
-    title: "Describe a crossing for navigation",
-    details: "Vision assist · short live call",
+    title: "Описать переход для навигации",
+    details: "Помощь зрением · короткий звонок",
     points: 22,
     visionAssist: true
   },
   {
     id: 5,
-    title: "Pick up bread on your way",
-    details: "Errand · reimbursed by ward",
+    title: "Зайти за хлебом по пути",
+    details: "Поручение · оплата чека подопечным",
     points: 16,
     visionAssist: false
   },
   {
     id: 6,
-    title: "Read the bus line on the LED board",
-    details: "Here & now · 2 min video",
+    title: "Прочитать номер автобуса",
+    details: "Здесь и сейчас · 2 мин видео",
     points: 20,
     visionAssist: true
   }
@@ -56,15 +56,15 @@ let points = 0;
 let visionAssists = 0;
 
 function getLevel(value) {
-  if (value >= 80) return "Pro";
-  if (value >= 45) return "Reliable helper";
-  if (value >= 18) return "Active volunteer";
-  return "Beginner";
+  if (value >= 80) return "Профи";
+  if (value >= 45) return "Надёжный помощник";
+  if (value >= 18) return "Активный волонтёр";
+  return "Новичок";
 }
 
 function getSpecialty(visionCount) {
-  if (visionCount >= 3) return "Navigation Guru";
-  if (visionCount >= 1) return "Vision guide (in training)";
+  if (visionCount >= 3) return "Гуру навигации";
+  if (visionCount >= 1) return "Зрячий гид (обучение)";
   return "—";
 }
 
@@ -83,14 +83,14 @@ function renderTasks() {
     const taskItem = document.createElement("article");
     taskItem.className = "task-item";
     const badge = task.visionAssist
-      ? '<span class="task-badge" aria-label="Vision assistance">Vision</span>'
+      ? '<span class="task-badge" aria-label="Помощь зрением">Зрение</span>'
       : "";
     taskItem.innerHTML = `
       <h4>${task.title} ${badge}</h4>
       <p class="task-meta">${task.details}</p>
-      <p><strong>Recorded hours (demo):</strong> +${task.points} pts</p>
+      <p><strong>Засчитано (демо):</strong> +${task.points} баллов</p>
       <button type="button" data-task-id="${task.id}">
-        Log completion
+        Отметить выполнение
       </button>
     `;
     taskFeed.appendChild(taskItem);
@@ -110,11 +110,11 @@ function onTaskComplete(event) {
   updatePassport();
   if (confirmationEl) {
     confirmationEl.textContent =
-      "Logged to your demo passport. In the full product this syncs to verified hours and task types.";
+      "Записано в демо-паспорт. В полной версии это синхронизируется с верифицированными часами.";
   }
 
   button.disabled = true;
-  button.textContent = "Logged";
+  button.textContent = "Выполнено";
 }
 
 function setupAccessibilityControls() {
