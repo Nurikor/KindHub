@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DEMO KindHub: выбор роли с переходом на отдельные страницы." />
+  <title>KindHub DEMO </title>
+  <link rel="stylesheet" href="./demo.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body data-site-page="demo">
+  <header class="header">
+    <div class="container header-inner">
+      <a href="./index.html" class="back-link" data-i18n="backHome">← На главную</a>
+      <div class="header-toolbar">
+        <label class="visually-hidden" for="langSelect">Language</label>
+        <select id="langSelect" class="lang-select" aria-label="Language">
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+          <option value="kg">Кыргызча</option>
+        </select>
+        <button id="themeToggle" class="theme-btn" type="button" data-i18n="themeDark">Тёмная тема</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="badge" data-i18n="badge">DEMO версия </p>
+      <h1 data-i18n="title">Выберите, как вы хотите войти в KindHub</h1>
+      <p class="lead" data-i18n="lead">В DEMO предусмотрено 4 роли. Нажмите на карточку для перехода на отдельный экран регистрации и функций.</p>
+    </section>
+
+    <section class="roles-grid" id="rolesGrid">
+      <a class="role-card role-link" href="./role-fund.html">
+        <span class="role-number">1</span>
+        <h2 data-i18n="role1t">Как фонд</h2>
+        <p data-i18n="role1d">Регистрация фонда, документы, направления работы.</p>
+      </a>
+
+      <a class="role-card role-link" href="./role-volunteer.html">
+        <span class="role-number">2</span>
+        <h2 data-i18n="role2t">Как волонтер</h2>
+        <p data-i18n="role2d">Для тех, кто уже зарегистрирован в фондах и хочет помогать глубже.</p>
+      </a>
+
+      <a class="role-card role-link" href="./role-bezvozdmezdnik.html">
+        <span class="role-number">3</span>
+        <h2 data-i18n="role3t">Как Безвоздмездник</h2>
+        <p data-i18n="role3d">Помощь людям рядом или по звонку в разных ситуациях.</p>
+      </a>
+
+      <a class="role-card role-link" href="./role-need-help.html">
+        <span class="role-number">4</span>
+        <h2 data-i18n="role4t">Как человеку, которому нужна помощь</h2>
+        <p data-i18n="role4d">Создание запроса с указанием места на карте, категориями помощи и поддержкой по звонку.</p>
+      </a>
+    </section>
+  </main>
+
+  <script src="./site-shared.js"></script>
+</body>
+</html>
