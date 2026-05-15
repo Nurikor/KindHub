@@ -9,11 +9,11 @@ const SITE_TRANSLATIONS = {
     ru: {
       themeDark: "Тёмная тема",
       themeLight: "Светлая тема",
-      badge: "Новый дизайн · MVP направление",
+      badge: "DEMO версия проекта для Хакатона"
       heroTitle: "Платформа, где помощь приходит быстро и безопасно",
       heroLead:
         "KindHub объединяет фонды, волонтёров, обычных людей и тех, кому нужна помощь, в одном понятном пространстве с доверием и реальными сценариями поддержки.",
-      openDemo: "Открыть DEMO MVP",
+      openDemo: "Открыть DEMO версию",
       howItWorks: "Как работает платформа",
       aboutTitle: "Основная идея KindHub",
       cardFund: "Для фондов",
@@ -32,11 +32,11 @@ const SITE_TRANSLATIONS = {
     en: {
       themeDark: "Dark theme",
       themeLight: "Light theme",
-      badge: "New design · MVP direction",
+      badge: "DEMO version of the Hackathon project",
       heroTitle: "A platform where help arrives quickly and safely",
       heroLead:
         "KindHub brings together foundations, volunteers, everyday helpers, and people who need support — one clear space built on trust and real support scenarios.",
-      openDemo: "Open DEMO MVP",
+      openDemo: "Open DEMO version",
       howItWorks: "How the platform works",
       aboutTitle: "KindHub in brief",
       cardFund: "For foundations",
@@ -55,11 +55,11 @@ const SITE_TRANSLATIONS = {
     kg: {
       themeDark: "Кара тема",
       themeLight: "Жарык тема",
-      badge: "Жаңы дизайн · MVP багыт",
+      badge: Хакатон үчүн долбоордун DEMO версиясы",
       heroTitle: "Жардам тез жана коопсуз жеткен платформа",
       heroLead:
         "KindHub фонддорду, ыктыярчыларды, кадимки адамдарды жана жардамга муктаждарды бир эле түшүнүктүү мейкиндикте бириктирет — ишеним жана реалдуу сценарийлер менен.",
-      openDemo: "DEMO MVP ачуу",
+      openDemo: "DEMO версиясыны ачуу",
       howItWorks: "Платформа кантип иштейт",
       aboutTitle: "KindHub жөнүндө негизги идея",
       cardFund: "Фонддор үчүн",
